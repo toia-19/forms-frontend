@@ -4,34 +4,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sombrero Seleccionador</title>
+    <title>Programación Frontend</title>
 
-    <link rel="shortcut icon" href="/assets/img/howarts.png" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="/public/style.css">
 </head>
 
 <body>
     <header>
         <h1>Programación Frontend</h1>
-        <h2>Actividad 1: Buscador con animación</h2>
+        <h2>Actividad 2: Formulario simple</h2>
     </header>
 
-    <div class="overlay">
-        <div class="spinner">
-            <div class="inner"></div>
-        </div>
-    </div>
+    <form class="formulario">
+        <h3>¡Bienvenido!</h3>
 
-    <form autocomplete="on">
-        <div class="img-container">
-            <img src="./assets/img/howarts.png" alt="Logo Howarts">
+        <div class="mb">
+            <label>Ingrese su nombre:</label>
+            <input type="text" name="nombre" id="nombre" required>
         </div>
 
-        <div>
-            <input type="text" id="input" placeholder="Ingresa un nombre:">
+        <div class="mb">
+            <label>Ingrese su email:</label>
+            <input type="email" name="email" id="email" required>
         </div>
 
-        <ul class="list"></ul>
+        <div class="mb">
+            <label>Ingrese su contraseña:</label>
+            <input type="password" name="contrasena" id="contrasena" required>
+        </div>
+        
+        <div class="mb">
+            <label>Seleccione un color:</label>
+            <select name="color_fav" id="color_fav" required>
+                <option value="rojo">Rojo</option>
+                <option value="azul">Azul</option>
+                <option value="amarillo">Amarillo</option>
+                <option value="verde">Verde</option>
+                <option value="naranja">Naranja</option>
+                <option value="violeta">Violeta</option>
+            </select>
+        </div>
+
+        <div class="mb">
+            <label>Deje un mensaje:</label>
+            <textarea name="mensaje" id="mensaje" required></textarea>
+        </div>
+
+        <button id="btn-enviar" type="submit">Enviar</button>
     </form>
 
     <footer>
